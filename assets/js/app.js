@@ -24,4 +24,3 @@ import ReactDOM from 'react-dom';
 import Buttons from './Buttons';
 
 ReactDOM.render(<Buttons />, document.getElementById('content'));
-
