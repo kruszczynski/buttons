@@ -20,7 +20,9 @@ defmodule ButtonsWeb.Router do
   end
 
   # Other scopes may use custom stacks.
-  # scope "/api", ButtonsWeb do
-  #   pipe_through :api
-  # end
+  scope "/api", ButtonsWeb do
+    pipe_through :api
+
+    resources "/buttons", ButtonController, only: [:index]
+  end
 end
