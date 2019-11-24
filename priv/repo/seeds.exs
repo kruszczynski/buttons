@@ -9,3 +9,6 @@
 #
 # We recommend using the bang functions (`insert!`, `update!`
 # and so on) as they will fail if something goes wrong.
+["Button", "Beton", "Close the window"]
+|> Enum.map(&(%Buttons.Button{label: &1}))
+|> Enum.each(&(Buttons.Repo.insert!(&1)))
