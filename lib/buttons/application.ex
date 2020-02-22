@@ -9,7 +9,7 @@ defmodule Buttons.Application do
     # List all child processes to be supervised
     children = [
       # Start the Ecto repository
-      Buttons.Repo,
+      # Buttons.Repo,
       # Start the endpoint when the application starts
       ButtonsWeb.Endpoint
       # Starts a worker by calling: Buttons.Worker.start_link(arg)
