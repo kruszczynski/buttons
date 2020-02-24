@@ -14,7 +14,11 @@ defmodule ButtonsWeb.ButtonController do
       %{
         id: 3,
         label: "Close the window",
-      }
+      },
+      # %{
+      #   id: 4,
+      #   label: "How about more buttons",
+      # },
     ]
 
     render(conn, "index.json", buttons: buttons)

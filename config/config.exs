@@ -7,9 +7,6 @@
 # General application configuration
 import Config
 
-config :buttons,
-  ecto_repos: [Buttons.Repo]
-
 # Configures the endpoint
 config :buttons, ButtonsWeb.Endpoint,
   url: [host: "localhost"],
