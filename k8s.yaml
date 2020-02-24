@@ -18,6 +18,10 @@ spec:
         imagePullPolicy: Never
         ports:
         - containerPort: 4000
+        livenessProbe:
+          httpGet:
+            path: /healthz
+            port: containerPort
 ---
 apiVersion: v1
 kind: Service
