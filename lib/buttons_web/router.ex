@@ -17,6 +17,7 @@ defmodule ButtonsWeb.Router do
     pipe_through :browser
 
     get "/", PageController, :index
+    get "/healthz", PageController, :healthz
   end
 
   # Other scopes may use custom stacks.
