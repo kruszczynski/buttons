@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: buttons
-        image: buttons
+        image: buttons-v1
         imagePullPolicy: Never
         ports:
         - containerPort: 4000

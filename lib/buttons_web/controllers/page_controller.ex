@@ -12,7 +12,7 @@ defmodule ButtonsWeb.PageController do
   end
 
   defp maybe_set_resp(conn, status) do
-    if(DateTime.compare(DateTime.utc_now, ~U[2020-02-26 17:00:00Z]) == :lt) do
+    if(DateTime.compare(DateTime.utc_now, ~U[2020-02-26 18:00:00Z]) == :gt) do
       resp(conn, status, "")
     else
       conn
