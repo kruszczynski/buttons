@@ -14,8 +14,10 @@ spec:
     spec:
       containers:
       - name: buttons
-        image: docker.pkg.github.com/kruszczynski/buttons/buttons:0.2.0
-        imagePullPolicy: Never
+        image: docker.pkg.github.com/kruszczynski/buttons/buttons:0.2.1
+        imagePullPolicy: Always
+        imagePullSecrets:
+          name: github
         ports:
         - containerPort: 4000
         livenessProbe:

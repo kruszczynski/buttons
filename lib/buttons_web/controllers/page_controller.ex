@@ -7,15 +7,6 @@ defmodule ButtonsWeb.PageController do
 
   def healthz(conn, _params) do
     conn
-    |> maybe_set_resp(422)
     |> render("healthz.json")
-  end
-
-  defp maybe_set_resp(conn, status) do
-    if(DateTime.compare(DateTime.utc_now, ~U[2020-02-26 18:00:00Z]) == :gt) do
-      resp(conn, status, "")
-    else
-      conn
-    end
   end
 end

@@ -19,6 +19,10 @@ defmodule ButtonsWeb.ButtonController do
         id: 4,
         label: "How about more buttons",
       },
+      %{
+        id: 5,
+        label: "v0.2.1",
+      },
     ]
 
     render(conn, "index.json", buttons: buttons)
