@@ -4,10 +4,6 @@ defmodule ButtonsWeb.ButtonController do
   def index(conn, _params) do
     buttons = [
       %{
-        id: 1,
-        label: "Button",
-      },
-      %{
         id: 2,
         label: "Beton",
       },
